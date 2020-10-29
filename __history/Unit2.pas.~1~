@@ -14,7 +14,6 @@ type
     Label2: TLabel;
     btn_area: TButton;
     lbr: TLabel;
-    Label3: TLabel;
     procedure btn_areaClick(Sender: TObject);
   private
     { Private declarations }
