@@ -1,0 +1,82 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'FrmPrincipal'
+  ClientHeight = 430
+  ClientWidth = 763
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 411
+    Width = 763
+    Height = 19
+    Panels = <
+      item
+        Text = 'Sistema de Clientes'
+        Width = 200
+      end
+      item
+        Text = 'Desenvolvido por Rhyan Pisoni'
+        Width = 200
+      end
+      item
+        Text = 'Data: '
+        Width = 220
+      end
+      item
+        Text = 'Hora'
+        Width = 200
+      end>
+  end
+  object pnl_Top: TPanel
+    Left = 0
+    Top = 0
+    Width = 763
+    Height = 41
+    Align = alTop
+    TabOrder = 1
+  end
+  object MainMenu1: TMainMenu
+    Left = 656
+    Top = 88
+    object Arquivo1: TMenuItem
+      Caption = 'Arquivo'
+      object Salvar1: TMenuItem
+        Caption = 'Salvar'
+      end
+      object Abrir1: TMenuItem
+        Caption = 'Abrir'
+      end
+      object Fechar: TMenuItem
+        Caption = 'Fechar'
+        OnClick = FecharClick
+      end
+    end
+    object Cadastros1: TMenuItem
+      Caption = 'Cadastros'
+      object Clientes1: TMenuItem
+        Caption = 'Clientes'
+        OnClick = Clientes1Click
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 672
+    Top = 256
+  end
+end

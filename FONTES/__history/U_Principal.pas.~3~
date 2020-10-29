@@ -1,0 +1,55 @@
+unit U_Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Menus, Vcl.ComCtrls,
+  Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TFrmPrincipal = class(TForm)
+    BitBtn1: TBitBtn;
+    procedure Timer1Timer(Sender: TObject);
+    procedure FecharClick(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses UClientes;
+
+procedure TFrmPrincipal.BitBtn1Click(Sender: TObject);
+begin
+  FrmClientes.ShowModal;
+end;
+
+procedure TFrmPrincipal.FecharClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TFrmPrincipal.Sair1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TFrmPrincipal.Timer1Timer(Sender: TObject);
+begin
+  statusbar1.Panels[2].Text := 'Data:' + FormatDateTime('dddd, dd " de " mmmm " de " ,yyyy', Now);
+
+  statusbar1.Panels[3].Text := FormatDateTime('hh:mm:ss', Now);
+
+end;
+
+end.

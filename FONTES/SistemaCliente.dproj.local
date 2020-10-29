@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/22 08:29:05.000.296,=D:\Projetos\Delphi 10\Teste\Unit4.pas</Transaction>
+    <Transaction>2020/04/22 08:29:23.000.619,D:\Projetos\Delphi 10\Teste\Unit4.dfm=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\U_Principal.dfm</Transaction>
+    <Transaction>2020/04/22 08:29:23.000.619,D:\Projetos\Delphi 10\Teste\Unit4.pas=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\U_Principal.pas</Transaction>
+    <Transaction>2020/04/22 08:29:36.000.658,D:\Projetos\Delphi 10\Teste\Project3.dproj=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\SistemaCliente.dproj</Transaction>
+    <Transaction>2020/04/29 08:08:37.000.499,=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+    <Transaction>2020/04/29 08:10:16.000.289,D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\U_DM.pas=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+    <Transaction>2020/04/29 08:10:16.000.289,D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\U_DM.dfm=D:\Projetos\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.dfm</Transaction>
+    <Transaction>2020/06/09 08:17:15.000.110,=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+    <Transaction>2020/06/09 08:18:12.000.871,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.dfm=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\U_Clientes.dfm</Transaction>
+    <Transaction>2020/06/09 08:18:12.000.871,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\U_Clientes.pas</Transaction>
+    <Transaction>2020/06/09 08:18:49.000.621,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\U_Clientes.pas=</Transaction>
+    <Transaction>2020/06/09 08:18:55.000.561,=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+    <Transaction>2020/06/09 08:19:01.000.551,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.dfm=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\UClientes.dfm</Transaction>
+    <Transaction>2020/06/09 08:19:01.000.551,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\UClientes.pas</Transaction>
+    <Transaction>2020/08/13 17:18:20.840,=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+    <Transaction>2020/08/13 18:25:21.007,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\U_LogBib.dfm=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.dfm</Transaction>
+    <Transaction>2020/08/13 18:25:21.007,D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\U_LogBib.pas=D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\FONTES\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

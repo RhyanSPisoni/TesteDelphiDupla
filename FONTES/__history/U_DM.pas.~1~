@@ -1,0 +1,48 @@
+unit U_DM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL,
+  FireDAC.Phys.MySQLDef, FireDAC.VCLUI.Wait, FireDAC.Comp.UI, Data.DB,
+  FireDAC.Comp.Client, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, FireDAC.Comp.DataSet;
+
+type
+  TDM = class(TDataModule)
+    FDConnection1: TFDConnection;
+    Driver: TFDPhysMySQLDriverLink;
+    FDGUIxWaitCursor1: TFDGUIxWaitCursor;
+    tb_Clientes: TFDTable;
+    DataSource1: TDataSource;
+    tb_ClientesID_CLI: TFDAutoIncField;
+    tb_ClientesCLI_NOME: TStringField;
+    tb_ClientesCLI_Endereco: TStringField;
+    tb_ClientesCLI_BAIRRO: TStringField;
+    tb_ClientesCLI_CIDADE: TStringField;
+    tb_ClientesCLI_UF: TStringField;
+    tb_ClientesCLI_RG: TStringField;
+    tb_ClientesCLI_CPF: TStringField;
+    tb_ClientesCLI_DATA_NASC: TDateField;
+    tb_ClientesCLI_DATA_CAD: TDateField;
+    tb_ClientesCLI_SITUACAO: TStringField;
+    tb_ClientesCLI_CEL: TIntegerField;
+    tb_ClientesCLI_TEL: TIntegerField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM: TDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,56 @@
+unit UClientes;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.Buttons,
+  Vcl.Mask, Vcl.DBCtrls, Data.Db, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+
+type
+  TFrmClientes = class(TForm)
+    PC_Clientes: TPageControl;
+    tb_cadastro: TTabSheet;
+    lb_nome: TLabel;
+    Label19: TLabel;
+    txt_nome: TDBEdit;
+    txt_cpf: TDBEdit;
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
+    imgacept: TImage;
+    imgback: TImage;
+    TabSheet1: TTabSheet;
+
+
+    procedure imgaceptClick(Sender: TObject);
+  private
+    procedure ConfigBtn;
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmClientes: TFrmClientes;
+
+implementation
+
+{$R *.dfm}
+
+uses U_DM;
+
+
+procedure TFrmClientes.imgaceptClick(Sender: TObject);
+begin
+// Inserir na tabela
+  DM.tb_Clientes.Active := true;
+  DM.tb_Clientes.Insert;
+
+// Desabilitando botões
+  ConfigBtn;
+
+// Tratar Data
+
+end;
+
+end.

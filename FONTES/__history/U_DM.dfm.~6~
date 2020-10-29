@@ -1,0 +1,58 @@
+object DM: TDM
+  OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  Height = 361
+  Width = 526
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Server=127.0.0.1'
+      'DriverID=MySQL')
+    Connected = True
+    Left = 104
+    Top = 240
+  end
+  object Driver: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'D:\Projetos\Projetos_RHY\Delphi 10\Google_Class\Projeto_1\lib\li' +
+      'bmySQL.dll'
+    Left = 176
+    Top = 240
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 80
+    Top = 32
+  end
+  object tb_Clientes: TFDTable
+    IndexFieldNames = 'idUsuario'
+    Connection = FDConnection1
+    UpdateOptions.UpdateTableName = 'tbusuario'
+    CatalogName = 'ljgames'
+    TableName = 'tbusuario'
+    Left = 248
+    Top = 248
+    object tb_ClientesidUsuario: TFDAutoIncField
+      FieldName = 'idUsuario'
+      Origin = 'idUsuario'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object tb_ClientesNome: TStringField
+      FieldName = 'Nome'
+      Origin = 'Nome'
+      Required = True
+      Size = 50
+    end
+    object tb_ClientesCPF: TStringField
+      FieldName = 'CPF'
+      Origin = 'CPF'
+      Required = True
+      Size = 45
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = tb_Clientes
+    Left = 344
+    Top = 256
+  end
+end
